@@ -29,7 +29,7 @@ print("Please type your score here:")
 raw_score = input()
 score = int(raw_score)
 
-if score < 50:
+if 0 == score < 50:
     print(notice_message, result[4])
 
 elif 50 == score < 55:
