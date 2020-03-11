@@ -17,10 +17,17 @@ Line 32 - 48: Simple If-Else statements. Pay your attention to this!!
 The final line: if your score is out of scope e.g. more than 100; print "your sc..."
 """
 
+# Criteria
+# 0 to 49 --> F
+# 50 to 54 --> D
+# 55 to 64 --> C
+# 65 to 74 --> B
+# 75 to 100 --> A
+
 guide_message = "Welcome:"
 print("Please type your name:")
 inp_name = input()
-print(guide_message, inp_name)
+print(guide_message, type(inp_name))
 
 notice_message = "You got:"
 result = ['A', 'B', 'C', 'D', 'F']
@@ -29,10 +36,10 @@ print("Please type your score here:")
 raw_score = input()
 score = int(raw_score)
 
-if score < 50:
+if 0 < score < 50:
     print(notice_message, result[4])
 
-elif 50 == score < 55:
+elif 49 < score < 55:
     print(notice_message, result[3])
 
 elif 54 < score < 65:
