@@ -13,7 +13,7 @@ Line 26: store grade letter grade into list
 Line 27: Print "Please type..."
 Line 29: Input score(your score)
 Line 30: Input score(score that is converted from str(default) to be int)
-Line 32 - 48: Simple If-Else statements. Pay your attention to this!!
+Line 32 - 55: Simple If-Else statements. Pay your attention to this!!
 The final line: if your score is out of scope e.g. more than 100; print "your sc..."
 """
 
@@ -36,7 +36,7 @@ print("Please type your score here:")
 raw_score = input()
 score = int(raw_score)
 
-if 0 < score < 50:
+if 0 <= score < 50:
     print(notice_message, result[4])
 
 elif 49 < score < 55:
